@@ -1,0 +1,44 @@
+body{
+    margin:0;
+    padding: 0;
+    color:#ffff;
+}
+nav{
+    background-color: #B11313;
+}
+nav .row-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    color: #ffff;
+    text-decoration: none;
+}
+main{
+    background: url(../Assets/Illustration/img35.png);
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+}
+.text{
+    padding-top: 35%;
+}
+footer{
+    background-color: black;
+}
+.social ul>li img{
+    border-radius: 50% ;
+    background-color: #B11313 ;
+}
+@media screen and (max-width:960px){
+    .right{
+        display:none;
+    }
+   
+}
+    
+
+
+
+
