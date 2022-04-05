@@ -135,7 +135,10 @@ a{
 }
 
 /*Partie rouge  avec les formulaires et spiderman bachgroung*/
-
+ .blue .button{
+     text-align: center;
+     padding-left: 60%;
+ }
 .rouge{
     height: 100vh;
     padding-top: 10%;
