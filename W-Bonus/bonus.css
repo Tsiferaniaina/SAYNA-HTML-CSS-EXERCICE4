@@ -44,6 +44,7 @@ main{
 
 .titre p{
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: 25px;
 }
 
@@ -62,6 +63,13 @@ footer{
     display: none;
     background-color: #B11313 ;
 }
+.form-select {
+    width: 200px;
+    color: #ffff;
+    padding: 5px 20px;
+    border-radius: 50px;
+    background-color: #B11313;
+}
 
 @media screen and (max-width:960px){
     .right{
@@ -75,6 +83,9 @@ footer{
     }
     .telephone .logo {
         text-align: center;
+    }
+    footer .desktop{
+        display:none;
     }
    
 }

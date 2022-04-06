@@ -9,7 +9,6 @@ body{
     margin:0;
     padding: 0;
     color:#ffff;
-    font-family: 'Montserrat', sans-serif;
 
 }         
 .titre h2{
@@ -38,23 +37,30 @@ a{
 /*Barre de navigation*/
 
 
-.header {
-    background: url(../Assets/Illustration/img5.png);
-    background-position: center left;
-    background-repeat: no-repeat;
-    background-color:  #f1c530;
+.header {   
+    background-position: center right;
     background-size: auto;
-    height: 110vh;
+    background-color:  #f1c530;
 }
+
 /*Gros titre la toile*/
-.header .text{
-    padding: 20% 0 0 40%;
+.image-background{
+    background-image: url(../Assets/Illustration/img5.png);
+    background-repeat: no-repeat;
+    height: 90vh;  
+    transform: scaleX(-1);
 
 }
+.header .text{
+    position: absolute;
+    margin-left: 10%;
+    top:40%;
+}
+
 .header h1{
     font-family: far-from_homecomingregular;
     font-weight: 100;
-    font-size: 90px;
+    font-size: 100px;
     
 }
 /*Fin gros titre la toile*/
@@ -137,10 +143,18 @@ footer{
 
 .social ul>li img{
     border-radius: 50% ;
-    background-color: #B11313 ;
+    background-color: #B11313;
 }
+
 .telephone{
     display: none;
+}
+.form-select {
+    width: 190px;
+    color: #ffff;
+    padding: 5px 20px;
+    border-radius: 50px;
+    background-color: #B11313;
 }
 
 /*Pour téléphone*/
@@ -150,17 +164,13 @@ footer{
     .section4, .right{
         display:none;
     }
-
-    header {
-        background-size:cover;
-        background-position: center;
-        height: 80vh;
-    }
-    .header .text{
-        padding: 40% 0 0 55%;
-    }
     .header h1{
-        font-size: 34px; 
+        font-size: 50px; 
+    }
+    .image-background{
+        height: 65vh;  
+        background-size: 400px;
+    
     }
     .header h2{
         font-size: medium;
@@ -182,14 +192,11 @@ footer{
         text-align: center;
         padding-top: 10px;
     }
-    .desktop , .right{
+    .desktop , .right ,  .telephone li{
         display: none;
     }
     .telephone{
         display:unset;
-    }
-    .telephone li{
-        list-style: none;
     }
     .telephone .logo {
         text-align: center;

@@ -17,12 +17,13 @@ header .text h1{
 }
 .text h2{
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: 22px;
 }
 
 p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 15px;
 }
 .header{
     background: url(../Assets/Illustration/img7.png);
@@ -60,11 +61,17 @@ a{
     font-size: 25px;
 }
 .main-section2 .text{
-    border: 5px solid rgb(29, 4, 4);
+    border: 8px solid rgb(29, 4, 4);
     border-radius: 0 0 30px 30px;
     font-size: 15px;
-    height: 300px;
+    height: 330px;
    
+}
+.left-telephone{
+    display: none;
+}
+.text{
+    padding-left: 10px;
 }
 /*footer*/
 footer{
@@ -79,12 +86,31 @@ footer{
 .telephone{
     display: none;
 }
+.form-select {
+    width: 200px;
+    color: #ffff;
+    padding: 5px 20px;
+    border-radius: 50px;
+    background-color: #f1c530;
+}
 @media screen and (max-width:960px){
-
-    .desktop , .right{
+   
+    .header{
+        height: 60vh;
+    }
+    .header .text{
+        padding-top:10%;
+    }
+    header .text h1{
+        font-size: 40px;
+    }
+    .text h2{
+        font-size: 20px;
+    }
+    .desktop , nav{
         display: none;
     }
-    .telephone{
+    .telephone , .left-telephone{
         display:unset;
     }
     .telephone li{
@@ -92,9 +118,5 @@ footer{
     }
     .telephone .logo {
         text-align: center;
-    }
-    .telephone select{
-        background-color: #B11313;
-        width: 200px;
     }
 }
